@@ -8,7 +8,7 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function sum(a, b,) { //eslint-disable-line
   let result = a + b;
   return [result, 'The sum of 4 and 7 is 11.'];
 }
@@ -50,11 +50,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    let result = sum(sum(a, b)[0], c);
+    let result2 = multiply(multiply(a, b)[0], c)
+    return [result[0], result2[0], '4 and 7 and 5 sum to 16.', 'The product of 4 and 7 and 5 is 140.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
